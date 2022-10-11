@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Place | Meme.rip</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" type="image/png" href="favicons/img-favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://cgolden15.github.io/">
+	<meta property="og:title" content="My Place | Meme.rip">
+	<meta property="og:description" content="View my socials and stuff">
+	<meta property="og:image" content="">
+    </head>
+    <body>
+
+      <input type="text" value="Meme.rip#6927" id="copy">
+
+        <div id="enter">
+            <b class="begin">Click to enter</b>
+        </div>
+
+        <div id="main">
+            <canvas id="noise" class="noise fixed-fluid"></canvas>
+            	<video allowfullscreen="true" autoplay="autoplay" playsinline="playsinline" loop="loop" loop id="video">
+			<source loop="true" id="vid" src="DropItLikeItsHot.mp4" type="video/mp4">                
+		</source></video>
+            <div class="social">
+		<a href="https://open.spotify.com/user/" target="_blank"><img class="spotify" src="images/spotify.svg"></a>
+		<a href="https://discord.com/invite/CKQuGPqx8M" target="_blank"><img class="dc" src="images/img-dc.svg"></a>
+                <a href="https://github.com/Memerip" target="_blank"><img class="gh" src="images/github.svg"></a>
+		<a href="https://sites.google.com/view/oasis0stuff/" target="_blank"><img class="other" src="images/code.svg"></a>
+            </div>
+        </div>
+
+        <!-- Javascript -->
+        <script src="js/js-enter.js"></script>
+        <script src="js/js-noise.js"></script>
+        <script>
+          function copy() {
+            var copyText = document.getElementById("copy");
+            var popup = document.getElementById("myPopup");
+            copyText.select();
+            document.execCommand("copy");
+            popup.classList.toggle("show");
+          }
+        </script>
+
+    </body>
+</html>
